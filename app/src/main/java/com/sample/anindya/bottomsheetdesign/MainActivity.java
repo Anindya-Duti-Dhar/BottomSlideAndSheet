@@ -101,6 +101,12 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.frame, fragment3);
             fragmentTransaction.commit();
         }
+        else if (id == R.id.nav_bottomsheet) {
+            BottomSheet fragment4 = new BottomSheet();
+            fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, fragment4);
+            fragmentTransaction.commit();
+        }
         else if (id == R.id.nav_manage) {
 
         }

@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#D50000</color> <!--#f44336-->
     <color name="colorAccent">#f44336</color>
 
+    <color name="transparent">#00000000</color>
+
     <!--reds-->
     <color name="md_red_50">#FFEBEE</color>
     <color name="md_red_100">#FFCDD2</color>

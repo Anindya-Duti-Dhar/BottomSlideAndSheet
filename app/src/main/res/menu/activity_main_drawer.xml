@@ -17,6 +17,11 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Slideshow" />
 
+        <item
+            android:id="@+id/nav_bottomsheet"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Bottom Sheet" />
+
     </group>
 
     <group android:checkableBehavior="single">
