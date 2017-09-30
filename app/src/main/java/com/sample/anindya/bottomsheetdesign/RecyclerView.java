@@ -4,29 +4,26 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mancj.slideup.SlideUp;
 
-
-public class PhotoUploadFragment extends Fragment {
+public class RecyclerView extends Fragment {
 
     //Defining Variables
-    Handler handler;
     FloatingActionButton fab;
+    Handler handler;
 
-    public static PhotoUploadFragment newInstance() {
-        PhotoUploadFragment fragment = new PhotoUploadFragment();
+
+    public static RecyclerView newInstance() {
+        RecyclerView fragment = new RecyclerView();
         fragment.setRetainInstance(true);
         return fragment;
     }
 
 
-    public PhotoUploadFragment() {
+    public RecyclerView() {
         // Required empty public constructor
     }
 
@@ -39,7 +36,7 @@ public class PhotoUploadFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.photo_upload, container, false);
+        return inflater.inflate(R.layout.recyclerview, container, false);
     }
 
     @Override
@@ -47,10 +44,6 @@ public class PhotoUploadFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         //view initialize and functionality declare
 
-        // initialize handler to hide and show fab button
-        handler = new Handler();
-
-        // fab button initialize
         fab = (FloatingActionButton) view.findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +59,6 @@ public class PhotoUploadFragment extends Fragment {
                 }, 200);
             }
         });
-
     }
 }
+

@@ -4,18 +4,18 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/photo_upload"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_menu_camera"
             android:title="Upload Photo" />
 
         <item
-            android:id="@+id/photo_picker"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import Photo" />
+            android:id="@+id/recyclerview"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="RecyclerView" />
 
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:title="Bottom Slider" />
 
         <item
             android:id="@+id/nav_bottomsheet"
@@ -25,15 +25,16 @@
     </group>
 
     <group android:checkableBehavior="single">
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+        <item
+            android:id="@+id/internet_checker"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Internet" />
 
-            <item
-                android:id="@+id/nav_manage"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="Tools" />
+        <item
+            android:id="@+id/runtime_permission"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Permission" />
+
     </group>
 
 </menu>

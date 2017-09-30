@@ -1,9 +1,6 @@
 package com.sample.anindya.bottomsheetdesign;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -89,30 +86,37 @@ public class MainActivity extends AppCompatActivity
             fragmentTransaction.replace(R.id.frame, fragment1);
             fragmentTransaction.commit();
         }
-        else if (id == R.id.photo_picker) {
-            PhotoPickerFragment fragment2 = new PhotoPickerFragment();
+        else if (id == R.id.recyclerview) {
+            RecyclerView fragment2 = new RecyclerView();
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, fragment2);
             fragmentTransaction.commit();
         }
-        else if (id == R.id.nav_slideshow) {
-            SlidingUpFromBottom fragment3 = new SlidingUpFromBottom();
+        else if (id == R.id.internet_checker) {
+            Internet fragment3 = new Internet();
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, fragment3);
             fragmentTransaction.commit();
         }
-        else if (id == R.id.nav_bottomsheet) {
-            BottomSheet fragment4 = new BottomSheet();
+        else if (id == R.id.runtime_permission) {
+            Permission fragment4 = new Permission();
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, fragment4);
             fragmentTransaction.commit();
         }
-        else if (id == R.id.nav_manage) {
-
+        else if (id == R.id.nav_slideshow) {
+            SlidingUpFromBottom fragment5 = new SlidingUpFromBottom();
+            fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, fragment5);
+            fragmentTransaction.commit();
         }
-        else if (id == R.id.nav_share) {
-
+        else if (id == R.id.nav_bottomsheet) {
+            BottomSheet fragment6 = new BottomSheet();
+            fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, fragment6);
+            fragmentTransaction.commit();
         }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
