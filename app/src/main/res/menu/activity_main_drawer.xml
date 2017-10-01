@@ -2,15 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/photo_upload"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Upload Photo" />
-
-        <item
-            android:id="@+id/recyclerview"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="RecyclerView" />
 
         <item
             android:id="@+id/nav_slideshow"
@@ -19,7 +10,7 @@
 
         <item
             android:id="@+id/nav_bottomsheet"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_menu_gallery"
             android:title="Bottom Sheet" />
 
     </group>
@@ -28,12 +19,12 @@
         <item
             android:id="@+id/internet_checker"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Internet" />
+            android:title="Settings" />
 
         <item
             android:id="@+id/runtime_permission"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Permission" />
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
 
     </group>
 

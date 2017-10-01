@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity
         // Launch Default  PhotoUploadFragment
         // set home fragment as default when this fragment launching
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        PhotoUploadFragment fragment = new PhotoUploadFragment();
+        BottomSheet fragment = new BottomSheet();
         fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frame, fragment);
         fragmentTransaction.commit();
@@ -80,40 +80,22 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.photo_upload) {
-            PhotoUploadFragment fragment1 = new PhotoUploadFragment();
+        if (id == R.id.internet_checker) {
+
+        }
+        else if (id == R.id.runtime_permission) {
+
+        }
+        else if (id == R.id.nav_slideshow) {
+            SlidingUpFromBottom fragment1 = new SlidingUpFromBottom();
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, fragment1);
             fragmentTransaction.commit();
         }
-        else if (id == R.id.recyclerview) {
-            RecyclerView fragment2 = new RecyclerView();
+        else if (id == R.id.nav_bottomsheet) {
+            BottomSheet fragment2 = new BottomSheet();
             fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frame, fragment2);
-            fragmentTransaction.commit();
-        }
-        else if (id == R.id.internet_checker) {
-            Internet fragment3 = new Internet();
-            fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame, fragment3);
-            fragmentTransaction.commit();
-        }
-        else if (id == R.id.runtime_permission) {
-            Permission fragment4 = new Permission();
-            fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame, fragment4);
-            fragmentTransaction.commit();
-        }
-        else if (id == R.id.nav_slideshow) {
-            SlidingUpFromBottom fragment5 = new SlidingUpFromBottom();
-            fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame, fragment5);
-            fragmentTransaction.commit();
-        }
-        else if (id == R.id.nav_bottomsheet) {
-            BottomSheet fragment6 = new BottomSheet();
-            fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.frame, fragment6);
             fragmentTransaction.commit();
         }
 
